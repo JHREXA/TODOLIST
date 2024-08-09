@@ -10,7 +10,7 @@
 // 'OnInit' : Interface Angular qui permet d'implémenter la méthode ngOnInit.
 import { Component, OnInit} from "@angular/core";
 // 'AuthService' : Service d'authentification importé pour gérer les actions liées à l'utilisateur, comme la connexion et la déconnexion.
-import { AuthService } from "./authService";
+import { AuthService } from "../../services/authService"; 
 
 
 /* 2 - Définition du Composant */

@@ -7,13 +7,13 @@ import { CookieService } from 'ngx-cookie-service'; // Import CookieService
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TareasComponent } from './components.tareas';
-import { NuevaTareaComponent } from './nueva-tarea.component';
-import { NavComponent } from './nav.component';
-import { HomeComponent } from './home.component';
-import { RegisterComponent } from './register.component';
-import { LoginComponent } from './login.component';
-import { ProfileComponent } from './profile.component';
+import { TareasComponent } from './components/pages/components.tareas'; 
+import { NuevaTareaComponent } from './components/partials/nueva-tarea.component'; 
+import { NavComponent } from './components/partials/nav.component';
+import { HomeComponent } from './components/pages/home.component';
+import { RegisterComponent } from './components/pages/register/register.component'; 
+import { LoginComponent } from './components/pages/login.component'; 
+import { ProfileComponent } from './components/pages/profile.component'; 
 
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -26,8 +26,8 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { WebService } from './web.service';
-import { AuthService } from './authService';
+import { WebService } from './services/web.service';
+import { AuthService } from './services/authService';
 
 @NgModule({
   declarations: [

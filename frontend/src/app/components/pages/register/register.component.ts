@@ -12,7 +12,7 @@ import { Component } from '@angular/core';
 // 'AbstractControl, FormBuilder, FormGroup, Validators' : Modules d'Angular Forms pour créer et gérer les formulaires réactifs et leurs validations.
 import { AbstractControl, FormBuilder, FormGroup, Validators } from '@angular/forms';
 // 'AuthService' : Un service d'authentification importé pour gérer l'enregistrement des utilisateurs.
-import { AuthService } from './authService';
+import { AuthService } from '../../../services/authService'; 
 
 /* 2 - Définition du Composant */
 @Component({

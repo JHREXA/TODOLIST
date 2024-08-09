@@ -10,8 +10,8 @@
 /*Component est importé depuis '@angular/core' pour déclarer le composant Angular.*/
 import { Component } from "@angular/core";
 /* WebService est importé depuis './web.service' pour utiliser les méthodes de service définies.  */
-import { WebService } from "./web.service";
-import { AuthService } from "./authService";
+import { WebService } from "../../services/web.service"; 
+import { AuthService } from "../../services/authService"; 
 
 
 @Component({

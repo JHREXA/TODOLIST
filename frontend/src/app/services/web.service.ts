@@ -22,7 +22,7 @@ export class WebService {
     username = username ? '/' + username : '';
     return this.http.get(this.APIURL + '/tareas' + username).subscribe({
         next: (res: any) => {this.tareasDB = res; },
-        error: (res: Response) => {
+        error: (_res: Response) => {
             this.manejadorErrores('No se ha podido obtener tareas');
         }
     });
@@ -44,7 +44,7 @@ export class WebService {
         this.tareasDB = res;
         this.tareasSujeto.next(this.tareasDB);
       },
-      error: (error) => {
+      error: (_error) => {
         this.manejadorErrores('No se ha podido obtener todas las tareas');
       }
     });
